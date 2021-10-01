@@ -61,7 +61,7 @@ const Wrapper = styled(motion.div)`
 
 const LogoWrapper = styled(motion.div)`
   width: 41px;
-`;
+`
 
 const VisaLogo = styled(UnstyledVisaLogo)`
   width: 100%;

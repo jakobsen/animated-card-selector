@@ -13,10 +13,14 @@ function SelectedCard({ card, ...delegated }: SelectedCardProps): JSX.Element {
   return (
     <Wrapper {...delegated}>
       <LogoWrapper layoutId={`${card.number}__logo`}>
-      {card.kind == "VISA" ? <VisaLogo/> : <MastercardLogo />}
+        {card.kind == "VISA" ? <VisaLogo /> : <MastercardLogo />}
       </LogoWrapper>
-      <Name>{card.firstName} {card.lastName}</Name>
-      <CardNumber layoutId={`${card.number}__sub`}>{formatCardNumber(card.number)}</CardNumber>
+      <Name>
+        {card.firstName} {card.lastName}
+      </Name>
+      <CardNumber layoutId={`${card.number}__sub`}>
+        {formatCardNumber(card.number)}
+      </CardNumber>
       <CardInfo>
         <CardInfoElement>{formatCardDate(card)}</CardInfoElement>
         <CardInfoElement>XXX</CardInfoElement>
@@ -56,7 +60,7 @@ const MastercardLogo = styled(UnstyledMastercardLogo)`
 const LogoWrapper = styled(motion.div)`
   width: 41px;
   margin-bottom: 30px;
-`;
+`
 
 const Name = styled(motion.span)`
   display: block;

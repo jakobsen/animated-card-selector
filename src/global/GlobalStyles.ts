@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -10,6 +10,6 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif; 
   }
-`;
+`
 
-export default GlobalStyles;
+export default GlobalStyles
