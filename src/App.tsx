@@ -1,5 +1,13 @@
-function App() {
-  return <h1>Hello!</h1>
+import CardList from "./components/CardList"
+import GlobalStyles from "./global/GlobalStyles"
+
+function App(): JSX.Element {
+  return (
+    <>
+      <CardList />
+      <GlobalStyles />
+    </>
+  )
 }
 
-export default App;
+export default App
